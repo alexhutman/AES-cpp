@@ -1,16 +1,15 @@
 #include <iostream>
-using namespace std;
 
 int main(int argc, char* argv[]) {
-	cout << "Hello world!" << endl;
+	std::cout << "Hello world!" << std::endl;
 
 	uint8_t jeff = 0xFF;
 
-	cout << "Jeff: " << unsigned(jeff) << endl;
+	std::cout << "Jeff: " << unsigned(jeff) << std::endl;
 
 	jeff <<= 5;
 
-	cout << "Jeff 2: " << unsigned(jeff) << endl;
+	std::cout << "Jeff 2: " << unsigned(jeff) << std::endl;
 
 	return 0;
 }
