@@ -13,13 +13,13 @@ int main(int argc, char* argv[]) {
 	std::cout << "Jeff 2: " << unsigned(jeff) << std::endl;
 
 	AES128 x;
-	x.getKeyLen();
+	x.encrypt("test1", "1");
 
 	AES192 y;
-	y.getKeyLen();
+	y.encrypt("test2", "2");
 
 	AES256 z;
-	z.getKeyLen();
+	z.encrypt("test3", "3");
 
 	return 0;
 }

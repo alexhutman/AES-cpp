@@ -1,12 +1,17 @@
 #ifndef ENCRYPT_H
 #define ENCRYPT_H
 
+#include <iostream>
+
 class Encrypt {
 	protected:
-		int key_length;
+		int keyLength;
+
+		void printState(uint8_t**);
+		void validateKey(std::string);
+		uint8_t** convertMsg(std::string);
 	public:
-		//string encrypt(string, string);
-		void getKeyLen();
+		std::string encrypt(std::string, std::string);
 };
 
 
