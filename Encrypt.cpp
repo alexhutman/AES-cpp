@@ -1,5 +1,4 @@
 #include "Encrypt.h"
-#include <cstdio>
 
 
 std::string Encrypt::encrypt(std::string msg, std::string key) {
@@ -18,9 +17,9 @@ void Encrypt::validateKey(std::string key) {
 void Encrypt::printState(uint8_t** state) {
 	for (int i = 0; i < 4; i++) {
 	    for (int j = 0; j < 4; j++) {
-		    printf("%i,", state[i][j]);
+		    std::cout << unsigned(state[i][j]) << " ";
 	    }
-	    printf("\n");
+	    std::cout << std::endl;
 	}
 }
 
