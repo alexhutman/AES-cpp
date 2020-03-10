@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdio>
-#include <cinttypes>
 using namespace std;
 
 int main(int argc, char* argv[]) {
